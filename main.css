@@ -385,7 +385,7 @@ a:hover {
     background-color: #0275d8;
     color: #ffffff;
 }
-.about-nav, .contact-nav, .faq-nav, .register-complaint--nav, .track-nav {
+.about-nav, .contact-nav, .faq-nav, .register-complaint, .track-nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,7 +396,7 @@ a:hover {
 .about-nav a,
 .contact-nav a,
 .faq-nav a,
-.register-complaint--nav a,
+.register-complaint a,
 .track-nav a {
     font-size: 1rem;
     font-weight: 600;
@@ -410,12 +410,12 @@ a:hover {
 .about-nav a:hover,
 .contact-nav a:hover,
 .faq-nav a:hover,
-.register-complaint--nav a:hover,
+.register-complaint a:hover,
 .track-nav a:hover,
 .about-nav a.active,
 .contact-nav a.active,
 .faq-nav a.active,
-.register-complaint--nav a.active,
+.register-complaint a.active,
 .track-nav a.active {
     background: #0275d8;
     color: #fff;
