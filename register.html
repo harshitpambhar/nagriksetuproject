@@ -94,7 +94,7 @@
             <p>Join Nagrik Setu to report civic issues and track their resolution. Your voice matters!</p>
         </div>
 
-        <form id="register-form">
+        <form action="register.php" method="POST" >
             <div class="form-group">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" placeholder="Eg:- Harshit Pambhar" required>
@@ -325,7 +325,7 @@
         const registerForm = document.getElementById('register-form');
         if (registerForm) {
             registerForm.addEventListener('submit', function (e) {
-                e.preventDefault();
+                // e.preventDefault();
                 const formData = new FormData(this);
 
                 // Send to PHP using fetch
