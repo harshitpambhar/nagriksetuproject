@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1900px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -342,7 +342,8 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 0.75px 1px;
-    min-height: 60;
+    min-height: 60px;
+    width: 100%;
 }
 
 
@@ -350,6 +351,8 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex: 0 0 auto;
+    justify-content: flex-start;
 }
 
 .logo img {
@@ -422,25 +425,35 @@ a:hover {
     text-decoration: none;
 }
 .slogan-container {
-    margin-left: 40px;
-    display: inline-block;
+    display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1;
     min-width: 120px;
     max-width: 350px;
+    margin: 0 auto;
 }
 
-#slogan-text, .slogan-container {
-    font-size: 50px;
+#slogan-text{
+    font-size: 30px;
     font-weight: 500;
     color: #0275d8;
     white-space: nowrap;
     letter-spacing: 0.5px;
     font-family: 'Segoe UI', 'Roboto', 'Open Sans', sans-serif;
 }
+.slogan-container {
+    margin-left: 0; /* reset old margin */
+    font-size: 24px; /* scale it down from 50px */
+    font-weight: 500;
+    color: #0275d8;
+    white-space: nowrap;
+}
+
 
 /* Typing Animation Styles */
 #typing-slogan {
+
     display: inline-block;
     min-height: 1em;
     white-space: nowrap;

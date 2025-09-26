@@ -8,7 +8,7 @@ $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 $area = $_POST['area'];
 
 // Connect to database
-$conn = new mysqli('localhost', 'root', '', 'register'); // <-- old DB
+$conn = new mysqli('localhost', 'root', '', 'register');
 if ($conn->connect_error) {
     echo json_encode(["success" => false, "error" => "Connection failed"]);
     exit();
@@ -18,13 +18,16 @@ $stmt = $conn->prepare("INSERT INTO citizenregistration (name, phone, email, pas
 $stmt->bind_param("sisss", $name, $phone, $email, $password, $area);
 
 if ($stmt->execute()) {
-    echo json_encode([
-        "success" => true,
-        "name" => $name,
-        "phone" => $phone,
-        "email" => $email,
-        "area" => $area
-    ]);
+    // echo json_encode([
+    //     "success" => true,
+    //     "name" => $name,
+    //     "phone" => $phone,
+    //     "email" => $email,
+    //     "area" => $area
+    // ]);
+    header("Location: login.html");
+    exit();
+
 } else {
     echo json_encode(["success" => false, "error" => $stmt->error]);
 }
