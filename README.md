@@ -56,9 +56,6 @@ Nagrik Setu is a comprehensive civic complaint management system that bridges th
 - Adjust styles in `style.css` for branding.
 - Backend integration can be done via `connect.php` or `app.py` as needed.
 
-## Credits
-- Made with ❤️ in India
-- UI inspired by modern civic engagement platforms
 
 ---
 For any issues or suggestions, please open an issue or contact the project maintainer.
